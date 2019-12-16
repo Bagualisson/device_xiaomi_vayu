@@ -4,3 +4,10 @@ allow { appdomain -isolated_app } vendor_xdsp_device:chr_file r_file_perms;
 
 get_prop({ appdomain -isolated_app }, vendor_fp_prop)
 get_prop({ appdomain -isolated_app }, vendor_tee_listener_prop)
+
+# Allow appdomain to get persist_camera_prop
+get_prop(appdomain, vendor_persist_camera_prop)
+get_prop(appdomain, vendor_display_prop)
+
+dontaudit appdomain sysfs_msm_subsys:dir search;
+dontaudit appdomain sysfs_msm_subsys:file r_file_perms;
