@@ -1,0 +1,20 @@
+[
+  {
+      "remote":"github",
+      "repository": "PixysOS-Devices/vendor_xiaomi_vayu",
+      "target_path": "vendor/xiaomi/vayu"
+      "revision":"eleven"
+  },
+  {
+      "remote":"github",
+      "repository": "PixysOS-Devices/kernel_xiaomi_vayu",
+      "target_path": "kernel/xiaomi/vayu"
+      "revision":"eleven"
+  },
+  {
+      "remote":"github",
+      "repository": "PixysOS-Devices/android_hardware_xiaomi",
+      "target_path": "hardware/xiaomi"
+      "revision":"eleven"
+  }
+]
