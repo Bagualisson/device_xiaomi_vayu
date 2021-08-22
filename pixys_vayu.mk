@@ -13,6 +13,7 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 
 # Inherit common PixysOS configurations
 $(call inherit-product, vendor/pixys/config/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_NAME := pixys_vayu
 PRODUCT_DEVICE := vayu
