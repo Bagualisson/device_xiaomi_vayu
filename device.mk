@@ -224,6 +224,7 @@ PRODUCT_PACKAGES += \
     qcom.fmradio
 
 # Framework detect
+$(call inherit-product, external/json-c/Android.configure.mk)
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
