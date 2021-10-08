@@ -80,8 +80,8 @@ public class ThermalService extends Service {
         @Override
         public void onTaskStackChanged() {
             try {
-                final ActivityManager.StackInfo focusedStack =
-                        ActivityTaskManager.getService().getFocusedStackInfo();
+                final ActivityTaskManager.RootTaskInfo focusedStack =
+                        ActivityTaskManager.getService().getFocusedRootTaskInfo();
                 if (focusedStack != null && focusedStack.topActivity != null) {
                     ComponentName taskComponentName = focusedStack.topActivity;
                     String foregroundApp = taskComponentName.getPackageName();
