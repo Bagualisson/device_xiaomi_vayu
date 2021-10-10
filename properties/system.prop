@@ -78,3 +78,6 @@ persist.sys.wfd.virtual=0
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
+
+# Supported AOSP Feature
+ro.support_one_handed_mode=true
