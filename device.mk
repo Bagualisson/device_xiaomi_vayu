@@ -163,6 +163,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Config Store
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service \
+    android.hardware.configstore@1.1-service
+
 # Dex
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
