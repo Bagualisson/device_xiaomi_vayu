@@ -456,8 +456,8 @@ vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 # Display calibration data
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
-vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml
+vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.xml|d2f35dc92b118ad5af3851e31d6719e635b8839a
+vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_video_mode_dsc_dsi_panel.xml|50be6c44235e9e22f415c668e8e2ac02201318bc
 
 
 # Display postprocessing
