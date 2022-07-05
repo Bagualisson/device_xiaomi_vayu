@@ -1,0 +1,23 @@
+[
+  {
+    "repository":  "android_vendor_xiaomi_vayu",
+    "target_path": "vendor/xiaomi/vayu",
+    "branch":      "twelve"
+  },
+  {
+    "repository":  "android_kernel_xiaomi_vayu",
+    "target_path": "kernel/xiaomi/vayu",
+    "branch":      "twelve"
+  },
+  {
+    "repository":  "android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch":      "twelve"
+  },
+  {
+    "remote": "github",
+    "repository":  "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch":      "lineage-19.1"
+  }
+]
