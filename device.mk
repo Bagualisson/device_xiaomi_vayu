@@ -26,6 +26,8 @@ BOARD_SHIPPING_API_LEVEL := 30
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
+VNDK_SP_LIBRARIES := \
+    com.android.vndk.current
 
 # Dynamic partitions setup
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
