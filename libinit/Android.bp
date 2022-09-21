@@ -25,4 +25,5 @@ cc_library_static {
         "libbase",
         "libfs_mgr",
     ],
+    ramdisk_available: true
 }

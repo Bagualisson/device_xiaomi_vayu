@@ -39,7 +39,8 @@
 #include <sys/sysinfo.h>
 
 #include "property_service.h"
-#include "vendor_init.h"
+namespace android {
+namespace init {
 
 #include <fs_mgr_dm_linear.h>
 
@@ -133,4 +134,5 @@ void vendor_load_properties() {
     }
 #endif
 }
-
+} //init
+} //android
