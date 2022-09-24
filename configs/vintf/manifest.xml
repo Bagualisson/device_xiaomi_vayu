@@ -115,6 +115,14 @@
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
+       <name>android.hardware.power.stats</name>
+       <transport>hwbinder</transport>
+       <interface>
+           <name>IPowerStats</name>
+           <instance>default</instance>
+       </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
@@ -260,9 +268,8 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
+    <hal format="aidl">
         <name>android.hardware.power</name>
-        <version>2</version>
         <interface>
             <name>IPower</name>
             <instance>default</instance>
