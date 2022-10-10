@@ -461,7 +461,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
-    vendor/omni/build/soong
+    vendor/omni/build/soong \
+    vendor/qcom/opensource/dataservices
 
 # NeuralNetworks
 PRODUCT_PACKAGES += \

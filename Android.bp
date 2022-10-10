@@ -13,4 +13,7 @@
 // limitations under the License.
 
 soong_namespace {
+    imports: [
+    "vendor/qcom/opensource/dataservices",
+    ],
 }
