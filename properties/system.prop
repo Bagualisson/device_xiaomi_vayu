@@ -18,6 +18,7 @@ vendor.bluetooth.soc=cherokee
 camera.disable_zsl_mode=true
 persist.vendor.camera.facepp.fdenable=0
 persist.vendor.camera.privapp.list=org.lineageos.aperture,com.android.camera
+ro.miui.notch=1
 
 # Charger
 ro.charger.disable_init_blank=true
