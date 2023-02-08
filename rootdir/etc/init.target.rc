@@ -188,6 +188,12 @@ on property:sys.boot_completed=1
     # to hide Magisk & co.
     chmod 440 /proc/net/unix
 
+service adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
+
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
