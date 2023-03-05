@@ -27,4 +27,8 @@
     <!-- Fingerprint sensor -->
     <dimen name="fingerprint_dot_radius">0dp</dimen>
     <dimen name="fingerprint_pulse_radius">0dp</dimen>
+
+    <!-- ROM maintainer name -->
+    <string name="build_maintainer_summary">Alisson Grizotti</string>
+
 </resources>
