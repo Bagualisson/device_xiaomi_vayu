@@ -88,7 +88,7 @@ void load_dalvik_properties() {
 }
 
 void set_device_props(const std::string brand, const std::string device, const std::string model,
-        const std::string name, const std::string marketname) {
+        const std::string name, const std::string marketname, const std::string &mod_device) {
     const auto set_ro_product_prop = [](const std::string &source,
                                         const std::string &prop,
                                         const std::string &value) {
@@ -103,19 +103,15 @@ void set_device_props(const std::string brand, const std::string device, const s
         set_ro_product_prop(source, "name", name);
         set_ro_product_prop(source, "marketname", marketname);
     }
+    property_override("ro.product.mod_device", mod_device.c_str());
 }
 
 void vendor_load_properties() {
-    string region = android::base::GetProperty("ro.boot.hwc", "");
-
-    if (region == "INDIA") {
-        set_device_props(
-            "POCO", "bhima", "M2102J20SI", "bhima_global", "POCO X3 Pro");
-        property_override("ro.product.mod_device", "bhima_global");
+     // Detect device and configure properties
+    if (GetProperty("ro.boot.hwc", "") == "INDIA") {
+        set_device_props("POCO", "bhima", "M2102J20SI", "bhima_in", "Xiaomi", "vayu_in_global");
     } else {
-        set_device_props(
-            "POCO", "vayu", "M2102J20SG", "vayu_global", "POCO X3 Pro");
-        property_override("ro.product.mod_device", "vayu_global");
+        set_device_props("POCO", "vayu", "M2102J20SG", "vayu", "Xiaomi", "vayu_global");
     }
 
     load_dalvik_properties();
