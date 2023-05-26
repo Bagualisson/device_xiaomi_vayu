@@ -138,6 +138,11 @@ TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/mode-ext.cpp
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 BOARD_USES_QCOM_HARDWARE := true
+QCOM_HARDWARE_VARIANT := sm8150
+MSMSTEPPE := sm8150
+TARGET_USES_MEDIA_EXTENSIONS := true
+TARGET_USES_QCOM_MM_AUDIO := true
+TARGET_USES_COLOR_METADATA := true
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
@@ -168,6 +173,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include vendor/omni/sepolicy/sepolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public

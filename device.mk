@@ -236,9 +236,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
      liblocation_api \
      libgps.utils \
-     libbatching \
      libgeofencing \
-     libloc_core \
      libgnss
 
 PRODUCT_COPY_FILES += \
@@ -303,8 +301,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
@@ -453,7 +451,8 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    vendor/omni/build/soong
 
 # NeuralNetworks
 PRODUCT_PACKAGES += \

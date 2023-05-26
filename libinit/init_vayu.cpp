@@ -39,10 +39,11 @@
 #include <sys/sysinfo.h>
 
 #include "property_service.h"
+
+#include <fs_mgr_dm_linear.h>
 namespace android {
 namespace init {
 
-#include <fs_mgr_dm_linear.h>
 
 using android::base::GetProperty;
 using std::string;

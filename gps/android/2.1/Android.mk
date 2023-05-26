@@ -62,8 +62,6 @@ LOCAL_SHARED_LIBRARIES := \
     libbase
 
 LOCAL_SHARED_LIBRARIES += \
-    libloc_core \
-    libgps.utils \
     libdl \
     liblocation_api \
 
@@ -97,8 +95,6 @@ LOCAL_SHARED_LIBRARIES := \
     libdl \
     libbase \
     libutils \
-    libgps.utils \
-    libqti_vndfwk_detect \
 
 LOCAL_SHARED_LIBRARIES += \
     libhidlbase \
