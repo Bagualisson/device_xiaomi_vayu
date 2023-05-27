@@ -886,4 +886,40 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+    	<name>android.hardware.audio.effect</name>
+    	<version>7.0</version>
+    	<interface>
+     	    <name>IEffectsFactory</name>
+            <instance>default</instance>
+    	</interface>
+	</hal>
+	<hal format="hidl" optional="true">
+    	<name>android.hardware.audio</name>
+    	<version>7.0-1</version>
+    	<interface>
+        	<name>IDevicesFactory</name>
+        	<instance>default</instance>
+    	</interface>
+	</hal>
+	<hal format="aidl" optional="true">
+    	<name>android.hardware.bluetooth.audio</name>
+    	<interface>
+        	<name>IBluetoothAudioProviderFactory</name>
+        	<instance>default</instance>
+    	</interface>
+	</hal>
+	<hal format="hidl" optional="true">
+    	<name>android.hardware.drm</name>
+    	<version>1.0-4</version>
+    	<interface>
+    	    <name>ICryptoFactory</name>
+    	    <instance>clearkey</instance>
+    	</interface>
+    	<interface>
+    	    <name>IDrmFactory</name>
+    	    <instance>clearkey</instance>
+    	</interface>
+    </hal>
+
 </compatibility-matrix>
