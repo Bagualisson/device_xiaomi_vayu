@@ -1,0 +1,6 @@
+attribute vendor_qccsyshal_client;
+attribute vendor_qccsyshal;
+attribute vendor_qccsyshal_server;
+attribute vendor_hal_perf;
+attribute vendor_hal_perf_client;
+attribute vendor_hal_perf_server;

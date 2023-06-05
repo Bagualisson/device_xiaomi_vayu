@@ -1,0 +1,3 @@
+# Allow DSP clients to perform binder IPC to DSP HAL server
+binder_call(vendor_hal_dspmanager_client, vendor_hal_dspmanager_server)
+binder_call(vendor_hal_dspmanager_server, vendor_hal_dspmanager_client)
