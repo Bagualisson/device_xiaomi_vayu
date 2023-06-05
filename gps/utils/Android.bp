@@ -1,6 +1,0 @@
-cc_library_headers {
-
-    name: "libgps.utils_headers",
-    export_include_dirs: ["."],
-    vendor: true,
-}

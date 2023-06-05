@@ -1,9 +1,0 @@
-cc_library_headers {
-
-    name: "libloc_core_headers",
-    vendor: true,
-    export_include_dirs: ["."] + [
-        "data-items",
-        "observer",
-    ],
-}
