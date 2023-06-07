@@ -201,6 +201,14 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
+$(call inherit-product, vendor/qcom/opensource/display/config/display-product-vendor.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys/display/config/display-product-commonsys.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk)
+$(call inherit-product, vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk)
+
+-include hardware/qcom-caf/sm8150/display/config/display-board.mk
+-include hardware/qcom-caf/sm8150/display/config/display-product.mk
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \

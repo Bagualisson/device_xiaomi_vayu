@@ -28,33 +28,15 @@ type ultrasound_device, dev_type;
 
 type vendor_sysfs_iio, fs_type, sysfs_type;
 
-type vendor_dpmtcm_socket, file_type, coredomain_socket, mlstrustedobject;
-
-type vendor_dpmd,domain;
-
-type vendor_qtelephony, domain;
-
-type vendor_hal_atfwd_hwservice, coredomain_hwservice, hwservice_manager_type, protected_hwservice;
-
 type vendor_persist_bluetooth_file, file_type;
 
-type persist_display_file, file_type;
-
-type vendor_systemhelper_app, domain;
-
 type vendor_persist_haptics_file, file_type;
-
-type vendor_display_notch_prop, property_type, extended_core_property_type;
-
-type vendor_persist_camera_prop, property_type, extended_core_property_type;
 
 type vendor_persist_rfs_file, file_type;
 
 type vendor_persist_rfs_shared_hlos_file, file_type, vendor_persist_type;
 
 type vendor_sensors_qti_exec, file_type;
-
-type vendor_elabel_data_file, file_type, data_file_type, core_data_file_type;
 
 type vendor_persist_drm_file, file_type;
 
@@ -66,39 +48,19 @@ type vendor_persist_file, file_type;
 
 type vendor_persist_wcnss_service_file, file_type;
 
-type vendor_persist_dpm_prop, property_type, extended_core_property_type;
-
-type vendor_fm_app, domain;
-
 type vendor_persist_iar_db_file, file_type;
 
-type vendor_qvrd, domain;
-
 type vendor_persist_hvdcp_file, file_type , vendor_persist_type;
-
-type vendor_location_app, domain;
-
-type vendor_mmi_sys, domain;
-
-type vendor_perfservice, domain, coredomain;
-
-type vendor_qcc_trd, domain;
 
 type vendor_persist_qti_fp_file, file_type;
 
 type vendor_persist_secnvm_file, file_type;
-
-type vendor_sys_video_prop, property_type, extended_core_property_type;
 
 type vendor_vppservice_exec, exec_type, vendor_file_type, file_type;
 
 type vendor_vppservice, domain;
 
 type vendor_persist_vpp_file, file_type;
-
-type vendor_vpsservice, domain, coredomain;
-
-type vendor_wfd_app, domain;
 
 type vendor_qlogd, domain;
 
