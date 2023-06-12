@@ -2573,10 +2573,6 @@
         <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
-    <path name="audio-playback-voip bt-a2dp">
-        <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia10" value="1" />
-    </path>
-
     <path name="audio-playback-voip bt-sco-wb">
         <path name="audio-playback-voip bt-sco" />
     </path>
@@ -4025,10 +4021,6 @@
     </path>
 
     <path name="incall_music_uplink speaker-and-display-port">
-        <path name="incall_music_uplink" />
-    </path>
-
-    <path name="incall_music_uplink afe-proxy">
         <path name="incall_music_uplink" />
     </path>
 
