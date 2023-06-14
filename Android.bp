@@ -15,5 +15,7 @@
 soong_namespace {
     imports: [
     "vendor/qcom/opensource/dataservices",
+    "hardware/google/interfaces",
+    "hardware/google/pixel",
     ],
 }
