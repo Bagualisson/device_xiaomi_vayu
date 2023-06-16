@@ -462,7 +462,17 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
     vendor/omni/build/soong \
-    vendor/qcom/opensource/dataservices
+    vendor/qcom/opensource/dataservices \
+    vendor/gms/common \
+    hardware/qcom-caf/sm8150 \
+    vendor/qcom/opensource/commonsys/display \
+    vendor/qcom/opensource/commonsys-intf/display \
+    vendor/qcom/opensource/display \
+    vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um \
+    vendor/qcom/opensource/fm-commonsys \
+    vendor/qcom/opensource/power \
+    hardware/nxp \
+    hardware/qcom-caf/common/fwk-detect
 
 # NeuralNetworks
 PRODUCT_PACKAGES += \
