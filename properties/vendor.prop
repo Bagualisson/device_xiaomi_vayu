@@ -178,7 +178,7 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.sar_sar_sensor=true
-ro.telephony.iwlan_operation_mode=legacy
+ro.telephony.iwlan_operation_mode=default
 
 # SoC
 ro.soc.manufacturer=Qualcomm
